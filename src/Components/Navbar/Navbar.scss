@@ -1,0 +1,108 @@
+@import "../Constant/variables.scss";
+
+.header-wrapper {
+  background-color: $primary;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+
+  // logo section
+  .logo-section {
+    width: 50%;
+
+    a {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      text-decoration: none;
+      .logo {
+        width: 4rem;
+      }
+      .logo-text {
+        font-size: 2.2rem;
+        color: $white;
+      }
+    }
+  }
+
+  .active {
+    display: none;
+  }
+  .nav-main {
+    .nav-list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 50%;
+      background-color: $primary;
+      // z-index: -1;
+      padding-top: 90px;
+      list-style-type: none;
+      text-align: center;
+      transition: 0.3s ease-in;
+      // display: none;
+
+      .nav-link {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        // background: yellow;
+        color: $white;
+        font-size: $font-heading2;
+
+        &:hover {
+          background: $primary-hover;
+        }
+      }
+    }
+  }
+
+  .menu {
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $tablet-view) {
+  .header {
+    .menu {
+      display: none;
+    }
+    .nav-main {
+      display: none;
+    }
+
+    .nav-desktop {
+      display: block;
+
+      .nav-desktop-list {
+        display: flex;
+        list-style-type: none;
+
+        .nav-desktop-item {
+          .nav-desktop-link {
+            text-decoration: none;
+            color: $white;
+            display: block;
+            padding: 0 10px;
+            text-transform: uppercase;
+            transition: 0.3s ease-in;
+
+            &:hover {
+              background: $primary-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

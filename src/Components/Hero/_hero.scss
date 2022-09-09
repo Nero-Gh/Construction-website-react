@@ -1,0 +1,60 @@
+@import "../Constant/variables.scss";
+
+.hero-wrapper {
+  background: $primary;
+
+  .hero {
+    .hero-image {
+      display: none;
+    }
+
+    .hero-content {
+      padding: 20px 5px;
+      display: flex;
+      flex-direction: column;
+      .hero-title {
+        margin-top: 20px;
+        font-size: 2.5rem;
+        color: $white;
+        text-shadow: 1px 3px 8px #111;
+        text-transform: capitalize;
+
+        .hero-title-span {
+          color: $yellow;
+        }
+      }
+      .hero-subtitle {
+        font-size: $font-default;
+        color: $light-grey;
+        margin-top: 3rem;
+      }
+    }
+
+    .sub-note {
+      display: flex;
+      //   justify-content: space-between;
+      gap: 10%;
+      color: $light-grey;
+
+      .sub1 {
+        .sub1-title {
+          color: $yellow;
+          font-size: $font-heading3;
+        }
+        .sub1-content {
+          font-size: $font-default;
+        }
+      }
+      .sub2 {
+        .sub2-title {
+          color: $green;
+          font-size: $font-heading3;
+        }
+
+        .sub2-content {
+          font-size: $font-default;
+        }
+      }
+    }
+  }
+}

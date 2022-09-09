@@ -1,0 +1,18 @@
+@import "../Constant/variables.scss";
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: $tablet-view) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: $desktop-view) {
+  .wrapper {
+    width: 80%;
+  }
+}
