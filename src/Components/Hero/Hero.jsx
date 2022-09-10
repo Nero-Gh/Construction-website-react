@@ -9,10 +9,6 @@ const Hero = () => {
     <div className="hero-wrapper">
       <Wrapper>
         <div className="hero">
-          <div className="hero-image">
-            <img src={construct1} alt="" className="hero-img1" />
-            <img src={construct2} alt="" className="hero-img2" />
-          </div>
           <div className="hero-content">
             <h1 className="hero-title">
               We Shape Our Buildings- Thereafter,
@@ -35,6 +31,10 @@ const Hero = () => {
                 <p className="sub2-content">Lorem, ipsum dolor.</p>
               </div>
             </div>
+          </div>
+          <div className="hero-image">
+            <img src={construct1} alt="" className="hero-img1" />
+            <img src={construct2} alt="" className="hero-img2" />
           </div>
         </div>
       </Wrapper>
